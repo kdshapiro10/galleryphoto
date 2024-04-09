@@ -40,6 +40,11 @@ nav a {
     color:#ffffff;
     margin-right: 20px;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007d7b;
 }
 
 nav ul {
@@ -58,6 +63,8 @@ p {
 
 #pcontact {
     text-align: center;
+    width:90%;
+    margin-left:30px;
 }
 
 figcaption, label, input, small {
@@ -65,20 +72,81 @@ figcaption, label, input, small {
 }
 
 .textbox {
-    width:100%;
+    width:90%;
 }
 
 input::placeholder{
     color:#007d7b;
+    font-size: 90%;
+}
+
+input[type="submit"] {
+    background-color: #007d7b;
+    color:#ffffff;
+    display: inline-block;
+    padding:0 50px 0 50px;
+    width:60%;
+    border-radius: 7px;
+    border-style: none;
+    padding:5px 0 5px 0;
+    text-transform: uppercase;
+}
+
+img {
+    width:100%;
 }
 
 label {
-    text-align: left;
     text-transform: uppercase;
+    display: inline-block;
+    width:100px;
+    text-align: left;
+    margin-left:-344px;
 }
 
+figure {
+    position: relative;
+    display: inline-block;
+}
 figcaption {
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bottomwhite {
+    position:absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color:#ffffff;
+}
+
+.topwhite {
+    position:absolute;
+    top:10px;
+    left:0;
+    right:0;
+    text-align:center;
+    color:#ffffff;
+}
+
+.topblack {
+    position:absolute;
+    top:10px;
+    left:0;
+    right:0;
+    text-align: center;
+    color:#000000;
+}
+
+.bottomblack {
+    position:absolute;
+    bottom:10px;
+    left:0;
+    right:0;
+    text-align: center;
+    color:#000000;
 }
 
 [href="#top"] {
@@ -117,6 +185,7 @@ footer {
     #image-grid {
         display:grid;
         grid-template-columns: 1fr 1fr;
+        width:100%;
     }
 }
 
@@ -131,5 +200,10 @@ footer {
         text-align: right;
     }
 
+    #image-grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width:100%;
+    }
 
 }
