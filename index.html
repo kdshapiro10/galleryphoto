@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>TK Photography</title>
 </head>
 <body>
@@ -10,21 +11,28 @@
 <h1>TK Photography</h1>
     <nav>
         <ul>
-            <li><a href="about">About</a></li>
-            <li><a href="gallery">Gallery</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#top">top</a></li>
         </ul>
     </nav>
 </header>
 
+<main>
+<section id="about">
 <h2>About</h2>
-<p>Hello! 
-I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+<p>Hello!</p>
+<p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
+</section>
 
+<section id="gallery">
 <h2>Gallery</h2>
 <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+</section>
 
+<section>
+<div id="image-grid">
 <figure>
     <img src="images/Chile.png" alt="beach woth waves in chile">
     <figcaption>Chile, 2001</figcaption>
@@ -33,7 +41,7 @@ I'm TK and I'm a photographer. I love looking at life through the lens of my cam
 <figure>
     <img src="images/Guatemala.png" alt="mountain and water with sunset in the background in guatemala">
     <figcaption>Guatemala, 1997</figcaption>
-</figure>
+</figure> 
 
 <figure>
     <img src="images/Hawaii.png" alt="mountains and ocean in hawaii">
@@ -61,7 +69,7 @@ I'm TK and I'm a photographer. I love looking at life through the lens of my cam
 </figure>
 
 <figure>
-    <img arc="images/Rocky-Mountains.png" alt="ocean clashing on rocks in the rocky mountains">
+    <img src="images/Rocky-Mountains.png" alt="ocean clashing on rocks in the rocky mountains">
     <figcaption>Rocky Mountains, 2009</figcaption>
 </figure>
 
@@ -84,18 +92,33 @@ I'm TK and I'm a photographer. I love looking at life through the lens of my cam
     <img src="images/Wyoming.png" alt="pine trees near lake with reflection and mountains in the background">
     <figcaption>Wyoming, 2021</figcaption>
 </figure>
+</div>
+</section>
 
-
+<section id="contact">
 <h2>Contact</h2>
-Please fill out this form and I'll connect with you soon.
+<p id="pcontact">Please fill out this form and I'll connect with you soon.</p>
 
-Your contact information
-Name (Your full name)
-Email (Enter your email address)
-Message (What can I help you with?)
-Submit
+<form action="/contact_info" method="post">
+<input type="hidden" value="Your contact information">
+    <label for="name">Name</label><br>
+    <input class="textbox" type="text" id="name" name="name" placeholder="YOUR FULL NAME"><br><br>
 
-Copyright 2021 TK Photography
+    <label for="email">Email</label><br>
+    <input class="textbox" type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS"><br><br>
+
+    <label for="message">Message</label><br>
+    <input class="textbox" type="text" id="message" name="message" placeholder="WHAT CAN I HELP YOU WITH?"><br><br>
+    
+    <input type="submit" value="Submit">
+    
+</form>
+</section>
+</main>
+
+<footer>
+    <small>Copyright 2021 TK Photography</small>
+</footer>
 
 </body>
 </html>

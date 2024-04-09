@@ -1,0 +1,135 @@
+html {
+    background-color: #000000;
+}
+
+body {
+    width: 485px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color:#000000;
+}
+
+h1 {
+    font-size: 3em;
+    color:#007d7b;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: -15px;
+    width:100%
+}
+nav {
+    background-color: #000000;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color:#ffffff;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 1.25em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+#pcontact {
+    text-align: center;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+.textbox {
+    width:100%;
+}
+
+input::placeholder{
+    color:#007d7b;
+}
+
+label {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+}
+
+#contact {
+    background-color: #000000;
+    color:#ffffff;
+    padding-top:3px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width:880px) {
+    body {
+        width:880px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    #image-grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        width:1300px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+
+}
