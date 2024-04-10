@@ -78,6 +78,7 @@ figcaption, label, input, small {
 input::placeholder{
     color:#007d7b;
     font-size: 90%;
+    font-weight:bold;
 }
 
 input[type="submit"] {
