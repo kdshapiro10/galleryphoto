@@ -85,8 +85,8 @@ input[type="submit"] {
     background-color: #007d7b;
     color:#ffffff;
     display: inline-block;
-    padding:0 50px 0 50px;
-    width:60%;
+    padding:0 30px 0 30px;
+    width:50%;
     border-radius: 7px;
     border-style: none;
     padding:5px 0 5px 0;
@@ -99,10 +99,9 @@ img {
 
 label {
     text-transform: uppercase;
-    display: inline-block;
-    width:100px;
-    text-align: left;
-    margin-left:-344px;
+    float:left;
+    text-align: right;
+    margin-left:20px;
 }
 
 figure {
@@ -164,12 +163,27 @@ figcaption {
     padding-bottom: 50px;
 }
 
+#gallery {
+    margin-top: -2px;
+}
+#image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:0 auto;
+    max-width: 100%;
+    gap:5px;
+    margin-bottom:7px;
+}
+
+.image {
+    margin: 0 auto;
+}
+
 footer {
     background-color: #000000;
     color: #ffffff;
     padding-bottom: 10px;
     text-transform: uppercase;
-
 }
 
 @media screen and (min-width:880px) {
@@ -185,8 +199,19 @@ footer {
 
     #image-grid {
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr 1fr;
+        max-width: 100%;
+        margin:0 auto;
+        gap:5px;
+    }
+
+    .image {
+        margin: 0 auto;
         width:100%;
+    }
+
+    label {
+        margin-left:45px;
     }
 }
 
@@ -205,6 +230,8 @@ footer {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         width:100%;
+        margin: 0 auto;
+        gap:5px;
     }
 
 }
