@@ -73,6 +73,7 @@ figcaption, label, input, small {
 
 .textbox {
     width:90%;
+    height:30px;
 }
 
 input::placeholder{
@@ -95,13 +96,14 @@ input[type="submit"] {
 
 img {
     width:100%;
+    margin: 0 auto;
 }
 
 label {
     text-transform: uppercase;
     float:left;
     text-align: right;
-    margin-left:20px;
+    margin-left:25px;
 }
 
 figure {
@@ -131,6 +133,16 @@ figcaption {
     color:#ffffff;
 }
 
+.bottomhawaii {
+    position:absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color:#ffffff;
+} 
+
+
 .topblack {
     position:absolute;
     top:10px;
@@ -159,20 +171,21 @@ figcaption {
 #contact {
     background-color: #000000;
     color:#ffffff;
-    padding-top:3px;
+    padding-top:2px;
     padding-bottom: 50px;
 }
 
 #gallery {
-    margin-top: -2px;
+    margin-top: -5px;
 }
 #image-grid {
     display: grid;
     grid-template-columns: 1fr;
     margin:0 auto;
     max-width: 100%;
-    gap:5px;
+    gap:15px;
     margin-bottom:7px;
+    padding-bottom:10px;
 }
 
 .image {
@@ -197,12 +210,22 @@ footer {
         text-align: left;
     }
 
+    .bottomhawaii {
+        position:absolute;
+        top: 260px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color:#ffffff;
+    } 
+
     #image-grid {
         display:grid;
         grid-template-columns:1fr 1fr;
         max-width: 100%;
         margin:0 auto;
-        gap:5px;
+        gap:10px;
+        padding:5px;
     }
 
     .image {
